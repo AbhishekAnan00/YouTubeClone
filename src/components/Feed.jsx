@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import tom from "../assets/tom.png";
 import { Link } from "react-router-dom";
 import { API_KEY } from "../Data";
 import { Value_Converter } from "../Data";
@@ -16,7 +15,7 @@ const Feed = ({ sidebar, filter }) => {
     fetchData();
   }, [filter]);
   return (
-    <div className={`grid grid-cols-4 gap-8 ${sidebar ? "" : "gap-14"}`}>
+    <div className={`grid grid-cols-4 phone-sm:grid-cols-1 width-all:grid-cols-4 gap-8 ${sidebar ? "" : "gap-14"}`}>
       {data.map((item, index) => {
         return (
           <Link to={`video/${item.snippet.categoryId}/${item.id}`}>
@@ -35,7 +34,6 @@ const Feed = ({ sidebar, filter }) => {
                   <p className="font-semibold text-2xl">{item.snippet.title}</p>
                   <p className="text-xl">{item.snippet.channelTitle}</p>
                   <p className="text-xl">
-                    {" "}
                     {Value_Converter(item.statistics.viewCount)} views .{" "}
                     {moment(item.snippet.publishedAt).fromNow()}
                   </p>

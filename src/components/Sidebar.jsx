@@ -156,7 +156,7 @@ const Sidebar = ({ sidebar, filter, setFilter }) => {
         <span
           className={`font-semibold text-xl ml-4 ${sidebar ? "" : "hidden"}`}
         >
-          Subscribed
+          Subscriptions
         </span>
         <div className="h-12 flex items-center gap-6 mt-3 pl-5 hover:bg-gray-200 hover:rounded-xl cursor-pointer">
           <img src={jack} className="h-8 w-8 rounded-full" />
@@ -167,7 +167,7 @@ const Sidebar = ({ sidebar, filter, setFilter }) => {
         <div className="h-12 flex items-center gap-6 mt-3 pl-5 hover:bg-gray-200 hover:rounded-xl cursor-pointer">
           <img src={simon} className="h-8 w-8 rounded-full" />
           <p className={`font-normal text-xl ${sidebar ? "" : "hidden"}`}>
-            Simon
+            Tony
           </p>
         </div>
         <div className="h-12 flex items-center gap-6 mt-3 pl-5 hover:bg-gray-200 hover:rounded-xl cursor-pointer">
@@ -179,7 +179,7 @@ const Sidebar = ({ sidebar, filter, setFilter }) => {
         <div className="h-12 flex items-center gap-6 mt-3 pl-5 hover:bg-gray-200 hover:rounded-xl cursor-pointer">
           <img src={megan} className="h-8 w-8 rounded-full" />
           <p className={`font-normal text-xl ${sidebar ? "" : "hidden"}`}>
-            Megan
+            Rose
           </p>
         </div>
       </div>

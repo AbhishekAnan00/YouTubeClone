@@ -22,7 +22,7 @@ const Recommended = ({ categoryId }) => {
     fetchData();
   }, []);
   return (
-    <div className="w-[30%]">
+    <div className="w-[30%] phone-sm:hidden phone-md:hidden phone-lg:hidden phone-xl:hidden phone-2xl:hidden width-all:block">
       {apiData.map((item, index) => {
         return (
           <Link to={`/video/${item.snippet.categoryId}/${item.id}`}>
@@ -40,7 +40,7 @@ const Recommended = ({ categoryId }) => {
                 <p className="font-semibold text-xl">{item.snippet.title}</p>
                 <p className="text-lg">{item.snippet.channelTitle}</p>
                 <p className="text-lg">
-                  {Value_Converter(item.statistics.viewCount)} views .{" "}
+                  {Value_Converter(item.statistics.viewCount)} views .
                   {moment(item.snippet.publishedAt).fromNow()}
                 </p>
               </div>

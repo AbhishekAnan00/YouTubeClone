@@ -41,7 +41,7 @@ const VideoPlayer = () => {
     comment_data();
   }, []);
   return (
-    <div className="w-[70%] pl-10 mt-5">
+    <div className="w-[70%] phone-sm:w-full width-all:w-[70%] pl-10 mt-5">
       <div>
         {/* <video src={video} controls autoPlay muted className="rounded-xl"></video> */}
         <iframe
@@ -87,8 +87,8 @@ const VideoPlayer = () => {
                   : "1.2k"}
               </p>
             </div>
-            <div className="h-8 w-[1px] bg-gray-500"></div>
-            <div className="flex items-center">
+            <div className="h-8 w-[1px] bg-gray-500 phone-sm:hidden phone-md:hidden phone-lg:hidden phone-xl:hidden phone-2xl:hidden width-all:block"></div>
+            <div className="flex items-center phone-sm:hidden phone-md:hidden phone-lg:hidden phone-xl:hidden phone-2xl:hidden width-all:block">
               <img src={dislike} className="h-8 w-8" />
             </div>
           </div>
@@ -98,7 +98,7 @@ const VideoPlayer = () => {
               <p className="font-medium text-lg">Share</p>
             </div>
           </div>
-          <div className="flex items-center gap-8  px-4 h-12 bg-gray-100 hover:bg-gray-200 rounded-full cursor-pointer">
+          <div className="flex items-center gap-8 px-4 h-12 bg-gray-100 hover:bg-gray-200 rounded-full cursor-pointer   phone-sm:hidden phone-md:hidden phone-lg:hidden phone-xl:hidden phone-2xl:hidden width-all:block">
             <div className="flex items-center gap-4">
               <img src={save} className="h-8 w-8" />
               <p className="font-medium text-lg">Download</p>
